@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio | terminal Welcome to my portfolio! — Type help for a list of supported commands." />
+    <meta name="keywords" content="cholid, cholidFajar, portfolio, HTML, CSS, cholid_fajar" />
+    <meta name="author" content="Cholid Fajar Supardi" />
+    <meta http-equiv="refresh" content="250" />
+    <link rel="shortcut icon" href="/assets/faviconn.png" type="image/x-icon" />
+    <link rel="stylesheet" type="" href="../dist/ouput.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/39565093f3.js"></script>
+    <script>
+      function close_window() {
+        if (confirm(' Close Window?')) {
+          close();
+        }
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $.getJSON(
+        'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=prithvijeet&api_key=88014e31fee3feab453dcef4f428e4dc&format=json',
+
+        function (data) {
+          let artist = document.getElementById('song');
+          let name = document.getElementById('track');
+
+          (track = $('.track')), (artistVal = data.recenttracks.track[0].artist['#text']), (trackVal = data.recenttracks.track[0].name);
+
+          artist.append(artistVal);
+          name.append(trackVal);
+        }
+      );
+    </script>
+    <title>Portfolio | Cholid Fajar Supardi</title>
+  </head>
+  <body style="font-family: 'Ubuntu', sans-serif" class="overflow-y-scroll bg-cover lazy text-[1.1rem]">
+    <div class="m-2 relative" onclick="document.getElementById('texter').focus();">
+      <div class="ring-1 ring-purple-500 bg-[#081d2dd8] border-[#7AE0CA] border hover:backdrop-blur-sm rounded-[2px] shadow-xl shadow-[#1d1e1fb4] min-h-[98vh] resize overflow-hidden">
+        <header>
+          <p class="p-2 text-center text-slate-400">
+            <a href="https://github.com/cholid15" target="blank"><i class="fa-brands fa-github pb-1 text-xl float-left text-slate-500 hover:text-slate-400"></i>fajar@Earth9999</a>
+            <a href="javascript:close_window();"><i class="fa-solid fa-circle-xmark text-xl justify-end text-slate-500 hover:text-slate-400 items-end float-right"></i></a>
+          </p>
+          <hr class="border-[#7AE0CA]" />
+        </header>
+
+        <div class="p-4">
+          <div class="flex flex-col md:flex-row">
+            <pre class="ascii px-0 py-0 mr-20 pb-5 prose lg:prose-xl text-[#8de2d0ac] whitespace-pre-wrap inline-block break-words leading-none" style="font-family: monospace, -webkit-pictograph">
+█▀▀ █▀█   ▀ █▀█ █▀▀█                       
+█▀▀ █▀▄  ░█ █▀▄ █▄▄▀      
+░    ░  █▄█     ▀░▀▀
+            </pre>
+
+            <div class="pl-2 float-right" ; style="font-family: 'Ubuntu', sans-serif">
+              <div class="text-[#7AE0CA] md:text-[16px] text-[15px]">
+                <i class="fa-solid fa-address-card pr-[0.9rem]"></i>Cholid Fajar Supardi
+                <pre class="text-[#8DE2D0]">----------------------------</pre>
+              </div>
+
+              <!-- Resume start -->
+              <a href="https://drive.google.com/drive/u/0/folders/1_fPe70TqJjUWm6E-otCw_x0zthc4G4aF" target="blank">
+                <div class="text-[#7AE0CA] text-[15.3px]">
+                  <i class="fa-solid fa-file-invoice pr-[1rem] justify-items-start"></i>CV<a href="https://drive.google.com/drive/u/0/folders/1_fPe70TqJjUWm6E-otCw_x0zthc4G4aF" class="text-[14.8px] p-1" target="blank">→ &nbsp; Lihat CV</a>
+                </div>
+              </a>
+              <!-- Resume End -->
+              <!-- Github Start -->
+              <a href="https://github.com/cholid15" target="blank">
+                <div class="text-[#7AE0CA] text-[15.3px]">
+                  <i class="fa-brands fa-github pr-[0.7rem] justify-items-start"></i>Github
+                  <a href="https://github.com/cholid15" target="blank" class="text-[14.8px] p-1">→ &nbsp;github/cholid15</a>
+                </div>
+              </a>
+              <!-- Github End -->
+
+              <!-- Facebook Start -->
+              <a href="https://web.facebook.com/profile.php?id=100053132540488" target="blank">
+                <div class="text-[#7AE0CA] text-[15.3px]">
+                  <i class="fa-brands fa-facebook pr-[0.7rem] justify-items-start"></i>Facebook
+                  <a href="https://web.facebook.com/profile.php?id=100053132540488" target="blank" class="text-[14.8px] p-1">→ &nbsp;fb/Kholid_Fajar</a>
+                </div>
+              </a>
+              <!-- Facebook End -->
+              <!-- Linkedin Start -->
+              <a href="https://www.linkedin.com/in/cholidfajar/" target="blank">
+                <div class="text-[#7AE0CA] text-[15.3px]">
+                  <i class="fa-brands fa-linkedin-in pr-[0.9rem] justify-items-start"></i>Linkedin
+                  <a href="https://www.linkedin.com/in/cholidfajar/" target="blank" class="text-[14.8px] p-1">→ &nbsp;linkedin/cholidfajar</a>
+                </div>
+              </a>
+              <!-- Linkedin End -->
+              <!-- Instagram Start -->
+              <a href="https://www.instagram.com/_kholidfajar/" target="blank">
+                <div class="text-[#7AE0CA] text-[15.3px]">
+                  <i class="fa-brands fa-instagram pr-[0.9rem] justify-items-start"></i>Instagram<a href="https://www.instagram.com/_kholidfajar/" target="blank" class="text-[14.8px] p-1">→ &nbsp;ig/_kholidfajar</a>
+                </div>
+              </a>
+              <!-- Instagram End -->
+            </div>
+          </div>
+          <!-- Terminal Start -->
+          <div id="terminal">
+            <a id="before"></a>
+          </div>
+
+          <div id="command" onclick="$('texter').focus();">
+            <input type="text" id="texter" class="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" />
+
+            <div id="liner">
+              <span id="typer"></span><b class="cursor" id="cursor">█</b>
+              <div class="list"></div>
+            </div>
+          </div>
+          <!-- Terminal End -->
+
+          <!-- Footer Start -->
+          <footer class="md:pt-[26%] pt-[100%]">
+            <div class="p-2 bg-[#061826a7] border-[#7AE0CA] border rounded-[2px] w-full md:w-max float-right relative bottom-4">
+              <div class="flex flex-row p-1">
+                <a href="">
+                  <i class="fa-brands fa-spotify animate-none md:animate-spin md:text-[5rem] text-[3rem]" style="animation-duration: 12s"></i>
+                </a>
+                <div class="">
+                  <div class="flex md:flex-col flex-row pl-2 text-[15px] md:text-[17px]">
+                    Now Listening to......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="underline text-[15px] md:text-[17px]">
+                      <div class="" id="">Track: Sunflower</div>
+                      <div class="text-[15px] md:text-[17px]"></div>
+                      <div class="" id="">Artist: Post Malone Ft. Swae Lee</div>
+
+                      <audio autoplay>
+                        <source src="/assets/sunflower.mp3" type="audio/mp3" />
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <!-- Licence Start -->
+          <div>
+            <div style="font-size: 12px">
+              <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Portfolio </span>
+              by <a xmlns:cc="http://creativecommons.org/ns#" href="#" property="cc:attributionName" rel="cc:attributionURL">Cholid Fajar Supardi</a>.
+
+              <br />
+
+              <p>&copy; <span id="currentYear"></span> Portfolio Website.</p>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- Footer End -->
+        </div>
+      </div>
+    </div>
+    <script>
+      // Ambil elemen dengan ID "currentYear"
+      var currentYearElement = document.getElementById('currentYear');
+
+      // Dapatkan tahun saat ini
+      var currentYear = new Date().getFullYear();
+
+      // Set nilai tahun saat ini ke elemen
+      currentYearElement.textContent = currentYear;
+    </script>
+
+    <script src="/js/caret.js"></script>
+    <script src="/js/commands.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
