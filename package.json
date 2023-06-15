@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-cholid",
+  "version": "1.0.0",
+  "description": "belajar membuat portfolio menggunakan tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o dist/ouput.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
